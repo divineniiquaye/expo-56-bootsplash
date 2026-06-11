@@ -26,13 +26,16 @@
     "plugins": [
       "expo-router",
       [
-        "expo-splash-screen",
+        "react-native-bootsplash",
         {
-          "backgroundColor": "#208AEF",
           "android": {
-            "image": "./assets/images/splash-icon.png",
-            "imageWidth": 76
-          }
+            "parentTheme": "EdgeToEdge",
+            "darkContentBarsStyle": true
+          },
+          "assetsOutput": "./assets/bootsplash",
+          "logo": "./assets/images/splash-icon.png",
+          "background": "#208AEF",
+          "logoWidth": 76
         }
       ]
     ],
